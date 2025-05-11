@@ -1,6 +1,5 @@
 # Tic Tac Toe
-
-![Tic Tac Toe](https://via.placeholder.com/800x200.png?text=Tic+Tac+Toe+Game)  
+ 
 *Classic two-player game built with C++ and VCL*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
