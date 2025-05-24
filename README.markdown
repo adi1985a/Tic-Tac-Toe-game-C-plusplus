@@ -1,90 +1,143 @@
-# Tic Tac Toe
- 
-*Classic two-player game built with C++ and VCL*
+# ❌⭕ Tic Tac Toe
+
+Classic two-player game built with **C++** and **VCL**.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![C++](https://img.shields.io/badge/Language-C%2B%2B-blue.svg)](https://isocpp.org/)
-[![Platform: Windows](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)](https://www.microsoft.com/windows)
+[![Platform: Windows](https://img.shields.io/badge/Platform-Windows-blue.svg)](https://www.embarcadero.com/products/cbuilder)
+[![Language: C++](https://img.shields.io/badge/Language-C++-lightgrey.svg)](https://isocpp.org/)
 
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Screenshots](#screenshots)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [How to Play](#how-to-play)
-- [Files](#files)
-- [Contributing](#contributing)
-- [License](#license)
-- [Author](#author)
+---
 
-## Overview
-"Tic Tac Toe" is a classic two-player game implemented in C++ using the VCL framework. Players alternate placing 'X' or 'O' on a 3x3 grid, aiming to align three symbols horizontally, vertically, or diagonally. The game features a graphical interface with BMP images, a turn indicator, and robust win detection.
+## 📑 Table of Contents
 
-## Features
-- **Graphical Interface**: Displays 'X', 'O', and empty fields using BMP images for a polished look.
-- **Turn Indicator**: Shows the current player's turn with a small 'X' or 'O' image.
-- **Win Detection**: Automatically checks 8 possible winning combinations after each move.
-- **Reset Functionality**: Restart the game with a single click to play again.
+- [Overview](#-overview)
+- [Features](#-features)
+- [Screenshots](#-screenshots)
+- [Requirements](#-requirements)
+- [Installation](#-installation)
+- [How to Play](#-how-to-play)
+- [Files](#-files)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Author](#-author)
 
-## Screenshots
-*Coming soon!*  
-Add screenshots of the game interface to the `screenshots/` folder and update this section.
+---
 
-## Requirements
-- **Compiler**: C++ compiler with VCL support (e.g., Embarcadero C++ Builder)
-- **Operating System**: Windows
-- **Image Files**: Place the following BMP files in an `img/` folder:
-  - `nic.bmp` (empty field)
-  - `x.bmp` (cross)
-  - `o.bmp` (circle)
-  - `xsmall.bmp` (small cross for turn indicator)
-  - `osmall.bmp` (small circle for turn indicator)
+## 🧠 Overview
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/tic-tac-toe.git
-   ```
-2. Ensure the `img/` folder with required BMP files is in the project directory.  
-3. Open the project in Embarcadero C++ Builder.  
-4. Build and run the application.
+**Tic Tac Toe** is a classic two-player game implemented in **C++** using the **VCL framework**. Players take turns placing `'X'` or `'O'` on a 3×3 grid, trying to align three identical symbols in a row, column, or diagonal. The game features a polished graphical interface, visual turn indicators, and automatic win detection.
 
-## How to Play
-1. Launch the game; the circle ('O') starts.  
-2. Click an empty square to place your symbol ('X' or 'O').  
-3. The turn indicator shows whose turn is next.  
-4. The game ends when a player aligns three symbols or the grid is full.  
-5. Click the **Reset** button to start a new game.
+---
 
-## Files
-- `Unit1.cpp`: Contains the main game logic and event handlers.  
-- `Unit1.h`: Defines the form and component declarations.  
-- `img/`: Directory containing BMP images for game visuals.
+## ✨ Features
 
-## Contributing
-Contributions are welcome! To contribute:
+- 🎨 **Graphical Interface**: Uses BMP images for `X`, `O`, and empty tiles.
+- 🔄 **Turn Indicator**: Shows current player with a mini-icon.
+- 🧠 **Win Detection**: Automatically checks for 8 possible winning conditions.
+- ♻️ **Reset Function**: Easily restart the game with one click.
 
-1. Fork the repository.  
-2. Create a new branch:  
-   ```bash
-   git checkout -b feature/your-feature
-   ```
-3. Make your changes and commit:  
-   ```bash
-   git commit -m "Add your feature"
-   ```
-4. Push to the branch:  
-   ```bash
-   git push origin feature/your-feature
-   ```
-5. Open a pull request.
+---
 
-Please ensure your code follows the existing style and includes comments.
+## 🖼️ Screenshots
 
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+_Coming soon!_  
 
-## Author
-**Adrian Lesniak**
+```markdown
+![Game Preview](screenshots/tictactoe_game.png)
+```
 
+---
+
+## ⚙️ Requirements
+
+- 💻 **Compiler**: C++ Compiler with **VCL** support (e.g. *Embarcadero C++ Builder*)
+- 🖥️ **Platform**: Windows OS
+- 🖼️ **Images** (place in `img/` directory):
+  - `nic.bmp` – Empty field
+  - `x.bmp` – X symbol
+  - `o.bmp` – O symbol
+  - `xsmall.bmp` – Small X for turn indicator
+  - `osmall.bmp` – Small O for turn indicator
+
+---
+
+## ▶️ Installation
+
+### 📥 Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/tic-tac-toe.git
+```
+
+### 🗂️ Ensure image assets are in place:
+
+Make sure the `img/` folder contains all required BMP files.
+
+### 🛠️ Build the project:
+
+- Open the `.cpp` project in **Embarcadero C++ Builder**.
+- Compile and run the application.
+
+---
+
+## 🎮 How to Play
+
+1. Launch the game. The circle (`O`) starts first.
+2. Click on any empty square to place your symbol.
+3. A small icon shows whose turn it is.
+4. The game ends when:
+   - A player aligns three symbols
+   - The board is full (draw)
+5. Click the **Reset** button to play again.
+
+---
+
+## 📁 Files
+
+```
+tic-tac-toe/
+├── Unit1.cpp           # Main game logic and event handlers
+├── Unit1.h             # Form and UI component declarations
+├── img/                # BMP images (game visuals)
+└── README.md           # Project documentation
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Follow these steps to contribute:
+
+```bash
+# 1. Fork the repository
+# 2. Create a feature branch
+git checkout -b feature/your-feature
+
+# 3. Make your changes and commit
+git commit -m "Add your feature"
+
+# 4. Push the branch
+git push origin feature/your-feature
+
+# 5. Open a pull request on GitHub
+```
+
+Please keep code style consistent and add comments where necessary.
+
+---
+
+## 📃 License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).  
+See the `LICENSE` file for full legal text.
+
+---
+
+## 👤 Author
+
+**Adrian Lesniak**  
+C++ & GUI Developer
+
+---
+
+> 💡 A fun project to revisit the classics with a modern C++ VCL twist.
